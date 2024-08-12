@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite sua primeira nota: ");
+        double num1 = input.nextDouble();
+
+        System.out.print("Digite sua segunda nota: ");
+        double num2 = input.nextDouble();
+
+        double soma = num1 + num2;
+
+        System.out.printf("Sua soma é igual a: %.2f%n", soma);
+
+        input.close(); 
+    }
+}
