@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Calculadora 1.0:\n1 - Para somar\n2 - Para subtrair \n3 - multiplicar\n");
+        int escolha = input.nextInt();
+
+        if(escolha == 1){
+            System.out.print("Digite um numero: ");
+            double num1 = input.nextDouble();
+
+            System.out.println("Digite outro numero: ");
+            double num2 = input.nextDouble();
+
+            double soma = num1 + num2;
+
+            System.out.println("A soma é igual a: "+ soma);
+
+        }
+        else if(escolha == 2){
+            System.out.print("Digite um numero: ");
+            double num1 = input.nextDouble();
+
+            System.out.println("Digite outro numero: ");
+            double num2 = input.nextDouble();
+
+            double sub = num1 - num2;
+            
+            System.out.println("A subtração é igual a: "+ sub);
+        }
+        else if(escolha == 3){
+            System.out.println("Digite um numero: ");
+            double num1 = input.nextDouble();
+
+            System.out.println("Digite outro numero: ");
+            double num2 = input.nextDouble();
+
+            double multi = num1 * num2;
+
+            System.out.println("A multiplicação é igual a: " + multi);
+        }  
+        input.close();
+    }
+}
