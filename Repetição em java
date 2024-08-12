@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Repeticao {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Digite um numero: ");
+        int num1 = input.nextInt();
+
+        System.out.println("Quantas vezes você quer que ele repita?: ");
+        int rep = input.nextInt();
+
+        for(int i = 0; i < rep; i++){
+            System.out.println(num1);
+        }
+
+        input.close();
+    }
+}
