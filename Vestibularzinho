@@ -1,0 +1,37 @@
+public class Aluno {
+  String nome;
+  String matricula;
+  double nota1 = 0.0;
+  double nota2 = 0.0;
+
+  void estudar(){
+    nota1 += 2.0;
+    nota2 += 1.5;
+  }
+  void vestibular(){
+    if(nota1 + nota2 >= 14.0){
+      System.out.println("Você passou no vestibular!");
+    }
+    else{
+      System.out.println("Reprovado :(");
+    }
+  }
+}
+
+//------------
+
+public class Main {
+  public static void main(String[] args) {
+  Aluno al1 = new Aluno();
+    al1.nome = "Carlos";
+    al1.matricula = "24070061";
+    al1.estudar();
+    al1.estudar();
+    al1.estudar();
+    al1.estudar();
+    System.out.println("Nota 1: "+al1.nota1+"\nNota 2: "+al1.nota2);
+    al1.vestibular();
+  
+  
+  }
+}
