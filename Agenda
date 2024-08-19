@@ -1,0 +1,72 @@
+//4 - Escreva	uma	classe	Agenda, que contém vários contatos	do tipo	Contato. 
+//Cada	contato possui, pelo menos nome, sexo, telefone e email. 
+//Crie um programa que cadastre, edite, exclua e consulte os contatos da classe Agenda.
+
+public class Agenda {
+    String nome;
+    String sexo;
+    String telefone;
+    String email;
+    
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getSexo() {
+        return sexo;
+    }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    public String getTelefone() {
+        return telefone;
+    }
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void printar(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("Sexo: " + getSexo());
+        System.out.println("Telefone: " + getTelefone());
+        System.out.println("E-mail: " + getEmail());
+    }
+
+    public void excluir(){
+        setNome("");
+        setEmail("");
+        setSexo("");
+        setTelefone("");
+    }
+
+    public void div(){
+        System.out.println("\n ------------------------------------------\n");
+    }
+    
+}
+
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Bem vindo a agenda!");
+
+        Agenda cont1 = new Agenda();
+        cont1.nome = "Carlos";
+        cont1.sexo = "Masculino";
+        cont1.telefone = "xxxxxxxxxx";
+        cont1.email = "xxxxxxx@gmail.com";
+
+        cont1.printar();
+        cont1.div();
+        cont1.excluir();
+        cont1.printar();
+    }
+}
