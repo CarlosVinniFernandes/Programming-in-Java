@@ -1,18 +1,43 @@
-// Escreva	uma	classe	para representar uma	Conta	Corrente que possui um número  
-//um saldo, um status que informa se ela é especial ou não e um limite. 
-//Desenvolva métodos para realizar saque (verificando se o	cliente pode realizar saques), depositar dinheiro, consultar saldo e verificar se o cliente está usando 
-//cheque especial  ou não. Desenvolva um programa principal que faça uso de todos os métodos da Classe.
+import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
-        Corrente conta = new Corrente();
+    public static void main(String[] args) throws Exception {
+        Conversao c = new Conversao();
+        Scanner input = new Scanner(System.in);
+       
+        while (true) {
+            System.out.println("Escolha a opção de conversão:");
+            System.out.println("1. Celsius para Fahrenheit");
+            System.out.println("2. Fahrenheit para Celsius");
+            System.out.println("3. Celsius para Kelvin");
+            System.out.println("4. Kelvin para Celsius");
+            System.out.println("5. Celsius para Réaumur");
+            System.out.println("6. Réaumur para Celsius");
+            System.out.println("7. Kelvin para Rankine");
+            System.out.println("8. Rankine para Kelvin");
+            System.out.println("9. Sair");
 
-        conta.setNumero(24070061);
-        System.out.println("Seu número é igual a: " + conta.getNumero());
-        conta.setStatus(true);
-        System.out.println("Você é cliente especial? "+conta.isStatus());
+            int escolha = input.nextInt();
 
-        
+            if (escolha == 1){
+                System.out.println("Digite a temperatura: ");
+                double temperatura = input.nextDouble();
 
+                c.celsiusFahrenheit(temperatura);
+                System.out.println(c.celsiusFahrenheit(temperatura));
+            }
+            
+            if (escolha == 9) {
+                System.out.println("Saindo...");
+                break;
+            }
+
+            if (escolha < 1 || escolha > 9) {
+                System.out.println("Escolha inválida, tente novamente.");
+                continue;
+            }
+
+            input.close();
+        }
     }
 }
