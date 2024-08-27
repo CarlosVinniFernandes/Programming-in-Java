@@ -7,39 +7,34 @@ public class Audio {
     private int curtidas;
     private int classificao;
     
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
+    public Audio(String nome, int duracao, int totalVisu, int curtidas, int classificao) {
         this.nome = nome;
-    }
-    public int getDuracao() {
-        return duracao;
-    }
-    public void setDuracao(int duracao) {
         this.duracao = duracao;
-    }
-    public int getTotalVisu() {
-        return totalVisu;
-    }
-    public void setTotalVisu(int totalVisu) {
         this.totalVisu = totalVisu;
-    }
-    public int getCurtidas() {
-        return curtidas;
-    }
-    public void setCurtidas(int curtidas) {
         this.curtidas = curtidas;
-    }
-    public int getClassificao() {
-        return classificao;
-    }
-    public void setClassificao(int classificao) {
         this.classificao = classificao;
     }
 
-    public int duracao(){
+    public String getNome() {
+        return nome;
+    }
+
+    public int getDuracao() {
         return duracao;
     }
+
+    public int getTotalVisu() {
+        return totalVisu;
+    }
+
+    public int getCurtidas() {
+        return curtidas;
+    }
+
+    public int getClassificao() {
+        return classificao;
+    }
+    
+    
     
 }
