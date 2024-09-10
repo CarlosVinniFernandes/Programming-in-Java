@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        String nomes[] = new String[5];
+        int nota1[] = new int[5];
+        int nota2[] = new int[5];
+        double media[] = new double[5];
+
+        for(int i = 0; i < 5; i++){
+            System.out.println("Digite o nome:");
+            nomes[i] = sc.nextLine();
+            System.out.println("Digite a nota1:");
+            nota1[i] = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Digite a nota 2:");
+            nota2[i] = sc.nextInt();
+            sc.nextLine();
+            media[i] = (nota1[i]+nota2[i])/2.0;
+        }
+        
+        for(int i = 0; i < 5; i++){
+            System.out.println("O aluno: " + nomes[i] + " teve a primeira igual a: " + nota1[i] + " e a segunda nota igual a: " + nota2[i] + " tendo uma média de: " + media[i]);
+        }
+    }
+}
