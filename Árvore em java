@@ -1,0 +1,25 @@
+ public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Seja bem vindo ao criador de árvore simulator!");
+        System.out.println("Digite o tamanho da sua árvore:");
+        String nome = sc.nextLine();
+        //int tamanho = sc.nextInt();
+        int i,j,k;
+        int tamanho = nome.length();
+        int espaco = tamanho;
+        char vetor[] =  nome.toCharArray();
+
+
+        for( i = 0; i < tamanho; i++){
+            System.out.print("");
+                for( j = 0; j < espaco-1;j++){
+                    System.out.print(" ");
+                }
+                for(k = espaco-1; k < tamanho;k++){
+                    System.out.print(vetor[k]+" ");
+            }
+                espaco -= 1;
+            System.out.println();
+        }
+    }
+}
