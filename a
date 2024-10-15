@@ -1,0 +1,15 @@
+blic class App {
+    public static void main(String[] args) throws Exception {
+    Filme apa = new Filme("Cassebhistory of casseb and isac","myazaki",2005,100);
+    Filme dark_souls = new Filme("dark souls","kubrick",2010,15);
+
+    Cinema c1 = new Cinema("CinemaBom");
+
+      libero.adicionar_filmes(dark_souls);
+      libero.adicionar_filmes(apa);
+      libero.saber_maior_preco();
+      libero.aplicar_desconto(20);
+      libero.exibir_detalhes_do_filme();
+    }
+}
+ 
