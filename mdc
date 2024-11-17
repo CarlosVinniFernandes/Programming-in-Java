@@ -1,0 +1,93 @@
+import java.lang.Math;
+import java.util.Scanner;
+
+public class MDC {
+    public static int calcularMDC(int a, int b)
+    {
+        int mdc = 0;
+        for(int k = 1; k <= Math.min(a, b); k++)
+        {
+            if(a%k == 0 && b%k == 0)
+            {
+                mdc = k;
+            }
+        }
+        return mdc;
+    }
+    
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        int a, b;
+
+        System.out.print("Digite um número: ");
+        a = input.nextInt();
+        System.out.print("Digite um número: ");
+        b = input.nextInt();
+
+        System.out.printf("MDC entre %d e %d é %d\n", a, b, calcularMDC(a,b));
+   
+        input.close();
+    }
+}
+import java.lang.Math;
+import java.util.Scanner;
+
+public class MDC {
+    public static int calcularMDC(int a, int b)
+    {
+        int mdc = 0;
+        for(int k = 1; k <= Math.min(a, b); k++)
+        {
+            if(a%k == 0 && b%k == 0)
+            {
+                mdc = k;
+            }
+        }
+        return mdc;
+    }
+    
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        int a, b;
+
+        System.out.print("Digite um número: ");
+        a = input.nextInt();
+        System.out.print("Digite um número: ");
+        b = input.nextInt();
+
+        System.out.printf("MDC entre %d e %d é %d\n", a, b, calcularMDC(a,b));
+   
+        input.close();
+    }
+}
+import java.lang.Math;
+import java.util.Scanner;
+
+public class MDC {
+    public static int calcularMDC(int a, int b)
+    {
+        int mdc = 0;
+        for(int k = 1; k <= Math.min(a, b); k++)
+        {
+            if(a%k == 0 && b%k == 0)
+            {
+                mdc = k;
+            }
+        }
+        return mdc;
+    }
+    
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        int a, b;
+
+        System.out.print("Digite um número: ");
+        a = input.nextInt();
+        System.out.print("Digite um número: ");
+        b = input.nextInt();
+
+        System.out.printf("MDC entre %d e %d é %d\n", a, b, calcularMDC(a,b));
+   
+        input.close();
+    }
+}
