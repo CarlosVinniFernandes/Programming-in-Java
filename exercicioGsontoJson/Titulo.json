@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Breaking Bad",
+    "duracao": 50,
+    "quantidadeTemporadas": 5,
+    "episodiosPorTemporada": 9,
+    "custoDaSerie": 100.0
+  },
+  {
+    "nome": "Better Call Saul",
+    "duracao": 50,
+    "quantidadeTemporadas": 5,
+    "episodiosPorTemporada": 9,
+    "custoDaSerie": 100.0
+  }
+]
